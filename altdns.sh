@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run -it -v words:/words altdns $@
+docker run -t -v words:/words altdns $@
