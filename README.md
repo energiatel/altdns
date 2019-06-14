@@ -8,9 +8,8 @@ docker build -t altdns .
 
 
 # run altdns
-/usr/bin/python /opt/subscan/altdns/altdns.py -i $finaloutputbeforealtdns -o data_output -w words.txt -r -e -d $altdnsserver -s $altdnsoutput -t $altdnsthreads
 
 
 ````shell
-./altdns.sh -d example.com
+docker run -t -v /root/massdns:/tmp/altdns altdns -i /tmp/altdns/subdomains.txt  -o /tmp/altdns/data_output -w /altdns/words.txt -r -s results_output.txt
 ````
