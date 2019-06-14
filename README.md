@@ -3,7 +3,7 @@
 # build altdns docker image
 
 ````shell
-./build.sh
+docker build -t altdns .
 ````
 
 
