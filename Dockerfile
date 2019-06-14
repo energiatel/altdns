@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER Glen Baker <iepathos@gmail.com>
+MAINTAINER energiatel <energiatel@gmail-com>
 RUN apt-get -y update && \
     apt-get -y dist-upgrade
 RUN apt-get install -y \
