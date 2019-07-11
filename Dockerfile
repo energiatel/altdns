@@ -17,10 +17,8 @@ RUN apt-get install -y \
 	python-pip \
 	wget \
 	zlib1g-dev && apt-get clean
-RUN pip install --upgrade pip
 
-RUN git clone https://github.com/infosec-au/altdns.git
-RUN pip install -r altdns/requirements.txt
+RUN pip install --upgrade pip
 RUN pip install py-altdns
 
 ENTRYPOINT ["altdns"]
